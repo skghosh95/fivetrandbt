@@ -1,6 +1,11 @@
-CREATE TABLE RAW_EMPLOYEE (  
-ID    VARCHAR (50)  NOT NULL,                      
-NAME VARCHAR (50) NOT NULL,  
-  
-PRIMARY KEY (ID)  
-);
+
+with final as (
+
+
+SELECT
+    Raw_employee.value:_name::VARCHAR as name,
+
+    Raw_employee.value:_id::VARCHAR as id,
+    from {{ source('name', 'id') }}
+ )  
+ select * from final
