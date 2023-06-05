@@ -7,4 +7,4 @@ sources:
   schema: s3
 
   tables:
-  - name: APP_1_JSON
+  - name: raw_employee
