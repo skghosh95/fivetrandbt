@@ -1,7 +1,7 @@
 dbtversion: 1.4.5
 
 jobs:
- - name: proccess_employee
+ - name: proccessed_employee
    targetName: dev
    schedule: "*/5 * * * *"
    steps:
