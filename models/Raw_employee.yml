@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+
+name: Raw_employee
+database: raw  
+schema: s3  
+tables:
+
+name: NAME
+
+name: ID
