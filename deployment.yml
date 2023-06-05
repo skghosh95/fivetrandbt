@@ -1,0 +1,12 @@
+dbtversion: 1.4.5
+
+jobs:
+ - name: proccess_employee
+   targetName: dev
+   schedule: "*/5 * * * *"
+   steps:
+     - name: run models
+       command: dbt run -m +customer
+     - name: test models
+       command: dbt test -m +customer
+       
