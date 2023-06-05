@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+- name: src
+  description: "CSV data source"
+  database: fivetrandatabase
+  schema: aws_s3
+
+  tables:
+  - name: APP_1_JSON
