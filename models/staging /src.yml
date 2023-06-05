@@ -3,7 +3,7 @@ version: 2
 sources:
 - name: src
   description: "CSV data source"
-  database: fivetrandatabase
+  database: Fivetrandatabase
   schema: s3
 
   tables:
