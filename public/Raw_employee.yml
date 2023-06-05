@@ -1,1 +1,20 @@
 
+version: 2
+
+sources:
+- name: src
+  description: "raw source db"
+  database: FIVETRAN_DATABASE
+  schema: s3
+
+  tables:
+  - name: Raw_employee
+  
+
+- name: meta
+  description: "metadata tables"
+  database: enrichment
+  schema: dbt
+
+  tables:
+  - name: Raw_employee_transformation_metadata
