@@ -1,0 +1,14 @@
+version: 2
+
+macros:
+    - name: dynamic_aggregation
+      description: ""
+      arguments:
+          - name: source_name
+            type: string
+          - name: source_type
+            type: string
+          - name: default_select_col
+            type: string
+          - name: default_where_cond
+            type: string
