@@ -1,0 +1,19 @@
+proccess_employee: 
+
+  target: dev 
+
+  outputs: 
+
+    dev: 
+
+       type: snowflake 
+
+       user: FIVETRAN_USER
+
+       password: <password>
+
+      dbname: databasename 
+
+      schema: schemaname 
+
+       threads: 4
