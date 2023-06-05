@@ -1,0 +1,6 @@
+CREATE TABLE RAW_EMPLOYEE (  
+ID    VARCHAR (50)  NOT NULL,                      
+NAME VARCHAR (50) NOT NULL,  
+  
+PRIMARY KEY (ID)  
+);
