@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: Raw_employee
+    description: Schema for Raw_employee
+
+    columns:
+      - name: id
+        description: tbd
+        tests:
+        - not_null
+      - name: name
+        description: tbd
