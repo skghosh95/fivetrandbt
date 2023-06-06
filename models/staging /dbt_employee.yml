@@ -8,7 +8,7 @@ sources:
   schema: s3
 
   tables:
-  - name: Raw_employee
+  - name: table_employee
   
 
 - name: meta
@@ -17,4 +17,4 @@ sources:
   schema: dbt
 
   tables:
-  - name: Raw_employee_transformation_metadata
+  - name: raw_employee_transformation_metadata
