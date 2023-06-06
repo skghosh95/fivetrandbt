@@ -1,1 +1,1 @@
-{{ dynamic_aggregation('dbt_orders') }}
+{{ dynamic_aggregation('dbt_employee') }}
