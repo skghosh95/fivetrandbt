@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+- name: json
+  description: "json file loading"
+  database: FIVETRANDATABASE
+  schema: S3
+
+  tables:
+  - name: suman000
