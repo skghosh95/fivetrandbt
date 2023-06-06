@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: Raw_employee
+    description: Schema for Raw_employee
+
+    columns:
+      - name: id
+        description: tbd
+        
+      - name: name
+        description: tbd
