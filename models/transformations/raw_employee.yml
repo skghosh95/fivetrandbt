@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: Raw_employee
-    description: Schema for Raw_employee
+  - name: raw_employee
+    description: Schema for raw_employee
 
     columns:
       - name: id
