@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-- name: json
-  description: "json file loading"
+- name: csv
+  description: "csv file loading"
   database: FIVETRANDATABASE
   schema: S3
 
