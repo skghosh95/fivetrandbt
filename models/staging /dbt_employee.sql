@@ -3,6 +3,6 @@ with final as (
         name  as name,
           id as id  
      
-from {{ source('src','Raw_employee') }}
+from {{ source('src','raw_employee') }}
 )
 select * from final
