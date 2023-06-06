@@ -7,4 +7,4 @@ sources:
   schema: S3
 
   tables:
-  - name: suman000
+  - name: Raw_employee
