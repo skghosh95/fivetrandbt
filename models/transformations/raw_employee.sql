@@ -1,8 +1,8 @@
-select * from Raw_employee
+select * from raw_employee
 (
     select
         name,
           id  
      
-from {{ ref('Raw_employee') }}
+from {{ ref('raw_employee') }}
 )
