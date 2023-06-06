@@ -15,7 +15,7 @@
         select
             non_transformation_column
         from
-            {{ source('meta', 'dynamic_transformation_metadata') }}
+            {{ source('meta', 'raw_employee_transformation_metadata') }}
         where
             lower(operation) = 'agg' and lower(target_model) = {{ "'" }}{{ this.name }}{{ "'" }}
         limit 1
@@ -32,7 +32,7 @@
         select
             listagg(distinct transformation, ',')
         from
-            {{ source('meta', 'dynamic_transformation_metadata') }}
+            {{ source('meta', 'raw_employee_transformation_metadata') }}
         where
             operation = 'agg' and lower(target_model) = {{ "'" }}{{ this.name }}{{ "'" }}
     {%- endset -%}
@@ -41,7 +41,7 @@
         select
             listagg(distinct transformation, ',')
         from
-            {{ source('meta', 'dynamic_transformation_metadata') }}
+            {{ source('meta', 'raw_employee_transformation_metadata') }}
         where
             operation = 'agg+filter' and lower(target_model) = {{ "'" }}{{ this.name }}{{ "'" }}
     {%- endset -%}
